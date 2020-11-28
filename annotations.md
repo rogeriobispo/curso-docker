@@ -23,4 +23,13 @@ docker image ls -> lista imagens
 docker volumes ls -> lista os volumes
 docker image rm <image> -> remove a imagem
 docker container rm <container> -> remove o container
+docker container --help -> lista ajuda do container
+docker image --help -> ajuda da image
+docker volume --help -> ajuda do volume
+docker image tag <image> <tag> -> adiciona uma tag a imagme.
+docker image pull <image> -> baixa a imagem.
+docker image build -> cria uma imagem através de um arquivo Dockerfile
+docker image push -> envia a imagem para o registry.
+docker image build --build-arg <variavel e ambiente> -t <tag> -> faz o build com uma variavel de ambiente.
+
 
