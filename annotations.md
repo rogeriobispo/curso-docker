@@ -31,5 +31,16 @@ docker image pull <image> -> baixa a imagem.
 docker image build -> cria uma imagem através de um arquivo Dockerfile
 docker image push -> envia a imagem para o registry.
 docker image build --build-arg <variavel e ambiente> -t <tag> -> faz o build com uma variavel de ambiente.
+docker tag <imagem> <novatagparaimage> -> cria uma nova tag para a imagem especificada
 
+redes docker 
 
+none -> não tem rede. 
+bridge -> padrão uma camada entre o docker e o host
+host -> mesma rede do host.
+overlay -> swarm
+
+docker container run -d --net (none, bridge, host) debian -> cria um container debian com uma rede
+docker network create --drive bridge rede_nova -> cria uma nova rede no docker.
+docker network connect bridge container3 -> conecta uma rede especificada ao container.
+docker network disconnect bridge container3 -> conecta uma rede especificada ao container.
