@@ -44,3 +44,13 @@ docker container run -d --net (none, bridge, host) debian -> cria um container d
 docker network create --drive bridge rede_nova -> cria uma nova rede no docker.
 docker network connect bridge container3 -> conecta uma rede especificada ao container.
 docker network disconnect bridge container3 -> conecta uma rede especificada ao container.
+docker-compose logs -f -t
+
+
+docker-compose commands
+
+docker-compose up -> compila e start os serviços do docker-compose.yml
+docker-compose up -d -> roda serviços em segundo plano. 
+docker-compose ps -> lista os serviços iniciados do docker-compose. 
+docker-compose exec db <comando a executar no container> -> executa um comando dentro do container.
+docker-compose down -> finaliza o serviço.
